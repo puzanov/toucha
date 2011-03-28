@@ -1,4 +1,5 @@
 <?
+error_reporting(E_ALL^E_NOTICE);
 require_once "HttpClient.php";
 
 $config = yaml_parse(file_get_contents("config.yml"));
