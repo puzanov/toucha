@@ -21,6 +21,5 @@ foreach ($config["girls"] as $girl) {
   $man_login = $men[rand(0, count($men)-1)]->login;
   echo "{$girl["login"]} is visiting $man_login\n";
   $client->get("/personal.php?user=$man_login");
-  $client->getStatus();
 }  
 ?>
